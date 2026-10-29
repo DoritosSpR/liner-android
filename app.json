@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Liner",
+    "slug": "liner-android",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.liner.app",
+      "deploymentTarget": "15.0",
+      "infoPlist": {
+        "NSAppleMusicUsageDescription": "Liner needs access to your media library to play local tracks.",
+        "NSMicrophoneUsageDescription": "Liner needs microphone access for voice search.",
+        "NSBluetoothAlwaysUsageDescription": "Liner uses Bluetooth to connect to audio devices.",
+        "NSBluetoothPeripheralUsageDescription": "Liner uses Bluetooth to connect to audio devices."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.liner.app",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "WAKE_LOCK",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "READ_MEDIA_AUDIO",
+        "READ_MEDIA_VIDEO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_SCAN",
+        "POST_NOTIFICATIONS"
+      ],
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      "expo-secure-store",
+      "expo-av",
+      "expo-file-system",
+      "expo-image-picker"
+    ],
+    "extra": {
+      "apiBaseUrl": "https://api.tryliner.fun",
+      "eas": {
+        "projectId": "liner-android"
+      }
+    }
+  }
+}
