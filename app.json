@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.liner.app",
@@ -20,7 +22,8 @@
         "NSAppleMusicUsageDescription": "Liner needs access to your media library to play local tracks.",
         "NSMicrophoneUsageDescription": "Liner needs microphone access for voice search.",
         "NSBluetoothAlwaysUsageDescription": "Liner uses Bluetooth to connect to audio devices.",
-        "NSBluetoothPeripheralUsageDescription": "Liner uses Bluetooth to connect to audio devices."
+        "NSBluetoothPeripheralUsageDescription": "Liner uses Bluetooth to connect to audio devices.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -30,19 +33,21 @@
       },
       "package": "com.liner.app",
       "permissions": [
-        "INTERNET",
-        "ACCESS_NETWORK_STATE",
-        "WAKE_LOCK",
-        "FOREGROUND_SERVICE",
-        "FOREGROUND_SERVICE_MEDIA_PLAYBACK",
-        "READ_MEDIA_AUDIO",
-        "READ_MEDIA_VIDEO",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
-        "BLUETOOTH_CONNECT",
-        "BLUETOOTH_SCAN",
-        "POST_NOTIFICATIONS"
-      ],
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -58,9 +63,13 @@
     ],
     "extra": {
       "apiBaseUrl": "https://api.tryliner.fun",
+      "router": {
+        "origin": false
+      },
       "eas": {
-        "projectId": "liner-android"
+        "projectId": "49852943-758a-4bc8-a393-833431d61615"
       }
-    }
+    },
+    "owner": "d-corps"
   }
 }
