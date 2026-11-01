@@ -32,7 +32,7 @@ jobs:
       - name: Build iOS IPA
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-        run: eas build --platform ios --profile production --non-interactive --wait
+        run: eas build --platform ios --profile development --non-interactive --wait
 
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
